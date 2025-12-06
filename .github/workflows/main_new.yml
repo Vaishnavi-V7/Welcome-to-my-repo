@@ -15,7 +15,7 @@ jobs:
     steps:
       - name: Test run for manual trigger
         if: ${{ github.event_name == 'workflow_dispatch' }}
-        run: echo "✅ Manual trigger successful — workflow is running fine."
+        run: echo "Manual trigger successful — workflow is running fine."
 
       - name: Run first-interaction action
         if: ${{ github.event_name != 'workflow_dispatch' }}
